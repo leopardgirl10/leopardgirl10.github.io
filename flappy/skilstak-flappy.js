@@ -56,7 +56,7 @@ var CONFIG = {
     "y": 55,
     "style": {
       "font": "80px sans-serif",
-      "fill": "#9999ff"
+      "fill": "#6600ff"
     }
   },
   "highscore": {
@@ -80,7 +80,7 @@ var CONFIG = {
     "score": {
       "style": {
         "font": "100px sans-serif", 
-        "fill": "#751aff",
+        "fill": "#6600ff",
         "align": "center"
       }
     } 
