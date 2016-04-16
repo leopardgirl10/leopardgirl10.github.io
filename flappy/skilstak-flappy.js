@@ -80,7 +80,7 @@ var CONFIG = {
     "score": {
       "style": {
         "font": "100px sans-serif", 
-        "fill": "#fdf6e3",
+        "fill": "#751aff",
         "align": "center"
       }
     } 
