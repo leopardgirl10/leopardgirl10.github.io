@@ -74,7 +74,7 @@ var CONFIG = {
     "offset": -150,
     "style": {
       "font": "100px sans-serif", 
-      "fill": "#b58900",
+      "fill": "#ff8533",
       "align": "center"
     }, 
     "score": {
@@ -96562,7 +96562,7 @@ Flappy.Boot.prototype = {
   },
 
   create: function () {
-    this.game.stage.backgroundColor = "#073642";
+    this.game.stage.backgroundColor = "#e6005c";
     this.game.state.start('preload');
   }
 
