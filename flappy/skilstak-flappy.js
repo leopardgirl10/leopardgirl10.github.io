@@ -65,7 +65,7 @@ var CONFIG = {
     "key": "skilstak-flappy-highscore",
     "style": {
       "font": "25px sans-serif", 
-      "fill": "#9999ff",
+      "fill": "#751aff",
       "align": "center"
     } 
   },
@@ -74,7 +74,7 @@ var CONFIG = {
     "offset": -150,
     "style": {
       "font": "100px sans-serif", 
-      "fill": "#ff8533",
+      "fill": "#751aff",
       "align": "center"
     }, 
     "score": {
