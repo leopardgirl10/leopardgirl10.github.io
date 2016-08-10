@@ -12,7 +12,7 @@ class BootState {
 }
 
 
-class LoadTsate {
+class LoadState {
   preload() {
     console.log("Loading...");
   }
