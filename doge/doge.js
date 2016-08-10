@@ -23,7 +23,7 @@ class LoadState {
   }
 }
 
-class PlayStart {
+class PlayState {
   create(){
     console.log("Entered Play Start");
     this.background = this.add.tileSprite(0,o,320,568,"background");
