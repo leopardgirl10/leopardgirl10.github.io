@@ -34,5 +34,6 @@ class PlayStart {
 var game = new Phaser.Game(320,568);
 game.state.add("Boot",BootState);
 game.state.add("Load",LoadState);
+game.state.add("Play",PlayState);
 game.state.start("Boot");
 
