@@ -9,6 +9,13 @@ var C= {
     "xspeed": 0,
     "yspeed":700,
     "file": "assets/background.png"
+  },
+  "p":{
+    "file":"assets/dodge.png",
+    "width":
+    "height":
+    "frames":2
+    
   }
 }
 
@@ -38,7 +45,7 @@ class LoadState {
 }
 
 class PlayState {
-  create(){
+  create() {
     console.log("Entered Play Start");
     this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
     this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
