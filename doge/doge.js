@@ -62,11 +62,12 @@ class PlayState {
     this.player.smoothed = false;
     this.player.scale.set(0.15)
   }
-}
-
+  
   update() {
     console.log("play.update() called");
+  }
 }
+
 
 function restart() {
   game.state.start("Boot");
