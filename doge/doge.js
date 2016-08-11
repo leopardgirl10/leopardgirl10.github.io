@@ -15,11 +15,14 @@ var C= {
     "width":575,
     "height":475,
     "frames":2,
+    "fps":2,
     "startx": 160,
     "starty":500,
     
   }
 }
+
+//-------------------------------------
 
 class BootState {
   preload() {
@@ -49,7 +52,9 @@ class LoadState {
 
 class PlayState {
   create() {
-    console.log("Entered Play Start");
+    console.log("Entered Play State");
+    
+    
     this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
     this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
     this.player = this.add.sprite(C.p.startx,C.p.starty,"player");
@@ -57,10 +62,10 @@ class PlayState {
     this.player.smoothed = false;
     this.player.scale.set(0.15)
   }
+}
 
   update() {
     console.log("play.update() called");
-  }
 }
 
 function restart() {
