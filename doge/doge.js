@@ -17,8 +17,8 @@ var C= {
     "frames":2,
     "fps":2,
     "startx": 160,
-    "starty":500,
-  }
+    "starty":500
+  },
     "d": {
       "file":"assets.dodgeme.png",
       "width":284,
