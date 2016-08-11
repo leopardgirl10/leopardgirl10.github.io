@@ -74,10 +74,14 @@ class PlayState {
     this.player.smoothed = false;
     this.player.scale.set(0.15);
     this.player.animations.add("anim");
-    this.player.animations.play("anim",C.p,fps,true);
+    this.player.animations.play("anim",C.p.fps,true);
     
     this.dodge = this.add.sprite(C.d.startx,C.d.starty,"dodge");
-    
+    this.dodge.anchor.set(0.5,0.5);
+    this.dodge.smoothed = false;
+    this.dodge.scale.set(0.15);
+    this.dodge.animations.add("anim");
+    this.dodge.animations.play("anim",C.d.fps,true);
   }
   
   
