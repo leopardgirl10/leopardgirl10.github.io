@@ -52,8 +52,10 @@ class PlayState {
     console.log("Entered Play Start");
     this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
     this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
-    this.player = this.add.sprite(C.p.startx,C.p.starty,"player")
-    
+    this.player = this.add.sprite(C.p.startx,C.p.starty,"player");
+    this.player.anchor.set(0.5,0.5);
+    this.player.smoothed = false;
+    this.player.scale(0.5)
   }
 
   update() {
