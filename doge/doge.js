@@ -11,7 +11,7 @@ var C= {
     "file": "assets/background.png"
   },
   "p":{
-    "file":"assets/dodge.png",
+    "file":"assets/dodger.png",
     "width":
     "height":
     "frames":2
