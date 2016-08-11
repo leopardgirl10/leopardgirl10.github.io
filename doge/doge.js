@@ -40,8 +40,8 @@ class LoadState {
 class PlayState {
   create(){
     console.log("Entered Play Start");
-    this.bg = this.add.tileSprite(0,0,320,568,"bg");
-    this.bg.autoScroll(0,700);
+    this.bg = this.add.tileSprite(c.bg.xspeed);
+    this.bg.autoScroll(C.bg.yspeed);
   }
 }
 
