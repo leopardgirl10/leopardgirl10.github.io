@@ -19,6 +19,17 @@ var C= {
     "startx": 160,
     "starty":500,
     
+    "d": {
+      "file":"assets.dodgeme.png",
+      "width":284,
+      "height":261,
+      "frames":3,
+      "fps":3,
+      "startx":160
+      "starty":32
+      
+    }
+    
   }
 }
 
@@ -57,11 +68,18 @@ class PlayState {
     
     this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
     this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
+    
     this.player = this.add.sprite(C.p.startx,C.p.starty,"player");
     this.player.anchor.set(0.5,0.5);
     this.player.smoothed = false;
-    this.player.scale.set(0.15)
+    this.player.scale.set(0.15);
+    this.player.animations.add("anim");
+    this.player.animations.play("anim",C.p,fps,true);
+    
+    this.dodge = this.add.sprite(C.d.startx,C.d.starty,"dodge");
+    
   }
+  
   
   update() {
     console.log("play.update() called");
