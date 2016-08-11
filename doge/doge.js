@@ -55,10 +55,10 @@ class PlayState {
     this.player = this.add.sprite(C.p.startx,C.p.starty,"player")
     
   }
-}
 
-update() {
-  console.log("play.update() called");
+  update() {
+    console.log("play.update() called");
+  }
 }
 
 function restart() {
