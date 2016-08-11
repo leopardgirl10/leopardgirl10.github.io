@@ -14,7 +14,9 @@ var C= {
     "file":"assets/dodger.png",
     "width":575,
     "height":475,
-    "frames":2
+    "frames":2,
+    "startx": 160,
+    "starty":500,
     
   }
 }
@@ -50,7 +52,13 @@ class PlayState {
     console.log("Entered Play Start");
     this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
     this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
+    this.player = this.add.sprite(C.p.startx,C.p.starty,"player")
+    
   }
+}
+
+update() {
+  console.log("play.update() called");
 }
 
 function restart() {
