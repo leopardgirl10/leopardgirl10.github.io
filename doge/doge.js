@@ -12,8 +12,8 @@ var C= {
   },
   "p":{
     "file":"assets/dodger.png",
-    "width":575
-    "height":475
+    "width":575,
+    "height":475,
     "frames":2
     
   }
