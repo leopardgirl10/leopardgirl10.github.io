@@ -1,9 +1,16 @@
 var C= {
   "game": {
-    "width": 320;
-    "height": 568;
+    "width": 320,
+    "height": 568
   },
-  "bg":
+  "bg": {
+    "width": 320,
+    "height": 568,
+    "xspeed": 0,
+    "yspeed":700,
+    "file": "assets/background.png"
+    
+  }
 }
 class BootState {
   preload() {
