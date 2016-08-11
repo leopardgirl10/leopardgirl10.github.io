@@ -1,3 +1,10 @@
+var C= {
+  "game": {
+    "width": 320;
+    "height": 568;
+  },
+  "bg":
+}
 class BootState {
   preload() {
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
@@ -15,7 +22,7 @@ class BootState {
 class LoadState {
   preload() {
     console.log("Loading...");
-    this.load.image("background", "assets/background.png")
+    this.load.image("bg", "assets/background.png")
   }
   create() {
     console.log("Loaded");
@@ -26,8 +33,8 @@ class LoadState {
 class PlayState {
   create(){
     console.log("Entered Play Start");
-    this.background = this.add.tileSprite(0,0,320,568,"background");
-    this.background.autoScroll(0,700);
+    this.bg = this.add.tileSprite(0,0,320,568,"bg");
+    this.bg.autoScroll(0,700);
   }
 }
 
