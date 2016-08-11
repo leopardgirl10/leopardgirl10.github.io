@@ -25,7 +25,7 @@ var C= {
       "height":261,
       "frames":3,
       "fps":3,
-      "startx":160
+      "startx":160,
       "starty":32
       
     }
