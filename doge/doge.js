@@ -88,7 +88,7 @@ class PlayState {
   
   
   update() {
-    if (this.cursor.left.isDown) {
+    if (this.cursors.left.isDown) {
       this.player.x -= C.p.speed;
     }
     if (this.cursors.right.isDown) {
