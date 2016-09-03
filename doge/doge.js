@@ -82,11 +82,18 @@ class PlayState {
     this.dodge.scale.set(0.2);
     this.dodge.animations.add("anim");
     this.dodge.animations.play("anim",C.d.fps,true);
+    
+    this.cursors = this.input.keyboard.createCursorKeys();
   }
   
   
   update() {
-    console.log("play.update() called");
+    if (this.cursor.left.isDown) {
+      this.player.x -= C.p.speed;
+    }
+    if (this.cursors.right.isDown) {
+      this.player.x += C.p.speed;
+    }
   }
 }
 
